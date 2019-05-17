@@ -17,7 +17,6 @@ body{
 header{
 	grid-area:sidebar;
 	height:100vh;
-	background-image: url(wood.jfif);
 	position:relative;
 	background-size:cover;
 	margin:-8px;
@@ -53,7 +52,6 @@ label{
 
 main{
 	grid-area:main;
-    background-image: url(desert.jfif);
     position: relative;
     top: 0;
     width:100%;
