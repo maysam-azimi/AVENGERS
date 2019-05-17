@@ -1,0 +1,133 @@
+$sky-blue:hsl(185, 100%, 85%);
+$white:hsl(0, 0%, 100%);
+$side-bg: hsl(39, 61%, 48%);
+
+body{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "sidebar main "
+  "sidebar main"
+  "footer footer"
+
+   }
+
+
+header{
+	grid-area:sidebar;
+	height:100vh;
+	background-image: url(wood.jfif);
+	position:relative;
+	background-size:cover;
+	margin:-8px;
+	padding:0px;
+}
+
+.qoute{
+	position:relative;
+	color:$sky-blue;
+	padding:0;
+	opacity: 1;
+}
+
+
+a{
+	position:relative;
+	text-decoration: none;
+	color: $white;
+	opacity:0.9;
+	padding: 10px;
+}
+
+a:hover{
+	color: $side-bg;
+}
+
+
+label{
+	color:$white;
+}
+
+
+
+main{
+	grid-area:main;
+    background-image: url(desert.jfif);
+    position: relative;
+    top: 0;
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -8px;
+    }
+
+
+
+#overlay{
+	background-color: #000000;
+	position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    opacity:0.5;
+}
+
+
+
+maip{
+	color:$white;
+	text-align:center;
+	font-size:150%;
+	font-weight:bold;
+	font-family: Times, serif;
+	margin-top:10%;
+	text-transform: capitalize;
+}
+
+
+
+.forms{
+	width:280px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-60%, -50%);
+}
+
+.put{
+	width:120%;
+	overflow:hidden;
+	font-size:30px;
+	padding: 8px 0px;
+	margin: 8px 0px;
+	border:none;
+	outline:none;
+	border-bottom:3px solid $sky-blue;
+	background:none;
+	margin-bottom:30px;
+}
+
+
+.btn{
+	width:120%;
+	height:50px;
+}
+
+
+footer{
+	grid-area:footer;
+}
+
+
+.feet{
+	color:black;
+	position:relative;
+	top: -50px;
+	font-family: Times, serif;
+	text-transform: capitalize;
+}
