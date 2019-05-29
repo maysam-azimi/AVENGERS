@@ -277,7 +277,7 @@ h3{
 @media only screen and (max-width: 630px) {
   label{
     display: block;
-    cursor: pointer;
+		cursor: pointer;
 }
 .maip{
 	font-size: 18px;
@@ -314,8 +314,13 @@ header{
 		display: none;
 }
 .menu a {
+		position: relative;
+		z-index: 1;
+		border: 2px solid $blue;
+		color:$black;
     display: block;
 		margin: 0;
+		background-color: $white;
 }	
 #pure:checked + .menu {
     display: block;
