@@ -32,7 +32,7 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: 100%;
 	background-image: linear-gradient(to right,rgba(0,0,0,.65),rgba(0,0,0,.65) );
 }
@@ -40,8 +40,6 @@ header{
 .container {
 	position: relative;
 }
-
-// new codes from nasir
 
 .nav {
   border-bottom: 1px solid #EAEAEB;
@@ -109,10 +107,14 @@ main{
 	margin-bottom: 60px;
 }
 
+.formofwish{
+	display: grid;
+	place-items: center;
+}
+
 .put{
+	text-align: center;
 	color: $white;
-	position:relative;
-	left:35%;
 	display:block;
 	width:30%;
 	padding: 20px 10px;
@@ -124,6 +126,7 @@ main{
 	opacity: 0.8;
 	margin-bottom:30px;
 }
+
 .put:focus{
 	box-shadow: 0 0 10px 4px #34495e;
 }
@@ -136,8 +139,7 @@ main{
 }
 
 .btn{
-	position:relative;
-	left:35%;
+	
 	width:31.7%;
 	height:50px;
 	font-size: 30px;
@@ -169,7 +171,7 @@ footer{
 }
 
 .footer-form{
-	max-width: 400px;
+	max-width: 40%;
 	margin-left: 30px;
 }
 
@@ -204,11 +206,7 @@ textarea {
 	}
 
 .symbols{
-	display: inline-block;
 	color: $white;
-	position: relative;
-	top: -276px;
-	left: 385px;
 }
 
 .fh1{
@@ -248,6 +246,7 @@ h3{
 	margin: 20px;
 	font-size:25px;
 }
+
 /*page response codes*/
 
 .grid-card {
@@ -257,7 +256,6 @@ h3{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-
 
 .item {
 	position:relative;
@@ -291,15 +289,11 @@ h3{
 	top: 23px;
 }
 .put{
-	position:relative;
-	left: 140px;
 	width: 50%;
 	margin: 10px 5px;
 	padding: 10px 5px;
 }
 .btn{
-	position: relative;
-	left: 230px;
 	font-size: 15px;
 	width: 20%;
 	border-radius: 35px;
