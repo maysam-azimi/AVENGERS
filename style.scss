@@ -250,8 +250,7 @@ h3{
 /*page response codes*/
 
 .grid-card {
-	position:relative;
-	z-index:1;
+	height: 70vh;
 	padding: 3rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
