@@ -363,8 +363,6 @@ header{
 		display: none;
 }
 .menu a {
-		position: relative;
-		z-index: 1;
 		border: 2px solid $blue;
 		color:$black;
     display: block;
@@ -389,7 +387,6 @@ header{
 		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	}
 	.grid-card {
-
 		padding: 2rem;
 		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 	}
@@ -399,4 +396,23 @@ header{
 		height: auto;
 		margin: 10px;
 	}
+}
+
+
+
+@media only screen and (max-width: 375px){
+	.fcards{
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}	
+	.qoute{
+		font-size: 12px;
+	}
+	.bid{
+		font-size: 30px;
+	}
+	::placeholder{
+		padding: 0px;
+		font-size: 15px;
+	}
+
 }
