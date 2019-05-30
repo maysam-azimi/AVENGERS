@@ -3,16 +3,17 @@ $black: hsl(0, 2%, 13%);
 $gray: hsl(0, 4%, 50%);
 
 // background gradient
-$red:hsl(357, 100%, 20%);
-$pink:hsl(310, 100%, 20%);
-$blue:hsl(242, 100%, 20%);
-$sky-blue: hsl(180, 100%, 20%);
-$green:hsl(125, 100%, 20%);
-$yellow:hsl(60, 100%, 20%);
-$orange:hsl(30, 100%, 20%);
+$red:hsl(357, 100%, 30%);
+$pink:hsl(310, 100%, 30%);
+$blue:hsl(242, 100%, 30%);
+$sky-blue: hsl(180, 100%, 30%);
+$green:hsl(125, 100%, 30%);
+$yellow:hsl(60, 100%, 30%);
+$orange:hsl(30, 100%, 30%);
 
 body{
 	margin:0px;
+	font-family: 'Cinzel', serif;
 }
 
 header{
@@ -73,10 +74,12 @@ label {
 	position: relative;
 	display:inline;
 	top: 35px;
-	margin: 5px;
-	font-size: 130%;
+	padding: 20px;
+	font-size: 20px;
 	color:$white;
+	text-transform: uppercase;
 }
+
 
 main{
 	height:100vh;
@@ -89,15 +92,22 @@ main{
 	font-size:30px;
 	font-weight:bold;
 	margin: 80px 0;
-	font-family: Times, serif;
 	text-transform: capitalize;
 }
 
 .abh{
-	position: relative;
-	z-index: 1;
+	font-size: 20px;
+	margin-bottom: 0;
 	color:$white;
-	text-align:center;
+	padding: 30px 20px;
+}
+
+
+.about{
+	color:$white;
+	font-size: 40px;
+	padding: 10px 0 0 20px;
+	margin: 24px 0px 0px 0px;
 }
 
 .bid{
@@ -139,7 +149,6 @@ main{
 }
 
 .btn{
-	
 	width:31.7%;
 	height:50px;
 	font-size: 30px;
@@ -167,7 +176,12 @@ footer{
 }
 
 .fdiv{
-	display: inline-block;
+	padding: 10px 0 20px 45px;
+}
+
+.fcards{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 }
 
 .footer-form{
@@ -207,6 +221,7 @@ textarea {
 
 .symbols{
 	color: $white;
+	margin: 20px 0 30px 15px;
 }
 
 .fh1{
@@ -250,17 +265,14 @@ h3{
 /*page response codes*/
 
 .grid-card {
-	height: 70vh;
 	padding: 3rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .item {
-	position:relative;
-	z-index:1;
 	font-family: Times, serif;
-	font-size:130%;
+	font-size:22px;
 	width: 200px;
   height: 100px;
   background-color:#ffffff;
@@ -271,21 +283,59 @@ h3{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.fa-facebook:hover {
+	cursor: pointer;
+	color: hsl(238, 100%, 35%);
+}
 
+.fa-instagram:hover {
+	cursor: pointer;
+	color: #ff6600;
+}
 
-@media only screen and (max-width: 630px) {
+.fa-yahoo:hover {
+	cursor: pointer;
+	color: hsl(268, 82%, 21%);
+}
+.fa-phone:hover {
+	cursor: pointer;
+	color: hsl(120, 85%, 35%);
+}
+
+@media only screen and (max-width: 800px) {
   label{
     display: block;
 		cursor: pointer;
+}
+.fdiv{
+	padding: 20px 20px 20px 95px;
+}
+.symbols{
+	padding: 20px 20px 20px 80px;
+}
+.fh1{
+	font-size: 21px;
+	margin:0px 0 10px 35px;
+	padding: 20px 0 0 0;
+}
+.footer-btn {
+	margin: 20px 0 0 20px;
+}
+.abh{
+	font-size: 20px;
+	margin-bottom: 0;
+	color:$white;
+	padding: 30px 20px;
 }
 .maip{
 	font-size: 18px;
 }
 .bid{
-	font-size: 35px;
+	font-size: 50px;
 }
 .qoute{
 	top: 23px;
+	font-size: 15px;
 }
 .put{
 	width: 50%;
@@ -323,5 +373,30 @@ header{
 }	
 #pure:checked + .menu {
     display: block;
-  }
+	}
+	.about{
+		color:$white;
+		font-size: 25px;
+		padding: 30px 0 10px 25px;
+		margin: 0;
+	}
+	.symbols{
+		color: $white;
+		margin: 20px 0 30px 15px;
+	}
+	.fcards{
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+	.grid-card {
+
+		padding: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	}
+	.item {
+		font-size:20px;
+		width: 120px;
+		height: auto;
+		margin: 10px;
+	}
 }
