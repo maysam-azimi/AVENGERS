@@ -49,12 +49,20 @@ header{
 }
 
 .menu a {
+	position: relative;
+	z-index: 1;
   clear: right;
   text-decoration: none;
   color: $white;
   margin: 0 40px 0 0;
 	line-height: 70px;
 	font-size: 20px;
+}
+
+.bgcolor{
+	background-color: rgba(255, 255, 255, 0.288);
+	margin: 20px 20px 0 20px;
+	border: 2px solid rgba(0, 255, 0, 0.13);
 }
 
 label {
