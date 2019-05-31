@@ -53,7 +53,8 @@ header{
   text-decoration: none;
   color: $white;
   margin: 0 40px 0 0;
-  line-height: 70px;
+	line-height: 70px;
+	font-size: 20px;
 }
 
 label {
@@ -234,8 +235,7 @@ textarea {
 h3{
 	font-size: 40px;
 	color: $white;
-	margin: 40px;
-	margin-left: 40px;
+	margin: 10px 0 40px 0;
 }
 
 .fa-phone:before {
